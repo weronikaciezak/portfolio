@@ -1,0 +1,12 @@
+services:
+  portfoilo:
+    container_name: weronikaciezak
+    image: portfolio-weronikaciezak:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - xcaddy
+
+networks:
+  xcaddy:
+    external: true
